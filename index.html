@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud-IN | 클라우드 인프라 솔루션</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-cloud">Cloud</span><span class="logo-in">-IN</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#products">제품</a></li>
+                <li><a href="#cloud-x">Cloud X</a></li>
+                <li><a href="#cloud-mesh">Cloud Mesh</a></li>
+                <li><a href="#exodus">EXODUS</a></li>
+                <li><a href="#acts">ACTs</a></li>
+                <li><a href="#contact" class="nav-cta">문의하기</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="테마 변경" title="테마 변경">
+                <span class="theme-icon light-icon">☀️</span>
+                <span class="theme-icon dark-icon">🌙</span>
+            </button>
+            <button class="mobile-menu-btn" aria-label="메뉴">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="grid-lines"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">Enterprise Cloud Solutions</div>
+            <h1 class="hero-title">
+                <span class="title-line">클라우드의 모든 것,</span>
+                <span class="title-line gradient-text">Cloud-IN</span>
+            </h1>
+            <p class="hero-desc">
+                VDI부터 Private Cloud, CMP까지<br>
+                기업 클라우드 인프라의 완벽한 파트너
+            </p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">제품 살펴보기</a>
+                <a href="#contact" class="btn btn-secondary">상담 신청</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="50">0</span>+
+                    <span class="stat-label">고객사</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="15">0</span>+
+                    <span class="stat-label">Years</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="99">0</span>.9%
+                    <span class="stat-label">가동률</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Products Overview -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Products</span>
+                <h2 class="section-title">Cloud-IN 제품군</h2>
+                <p class="section-desc">기업의 클라우드 여정을 함께합니다</p>
+            </div>
+            <div class="products-grid">
+                <a href="#cloud-x" class="product-card" data-product="cloudx">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 21h8M12 17v4"/>
+                        </svg>
+                    </div>
+                    <h3>Cloud X</h3>
+                    <p>SKB Cloud X VDI 솔루션</p>
+                    <span class="card-arrow">→</span>
+                </a>
+                <a href="#cloud-mesh" class="product-card" data-product="mesh">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3"/>
+                            <circle cx="4" cy="6" r="2"/>
+                            <circle cx="20" cy="6" r="2"/>
+                            <circle cx="4" cy="18" r="2"/>
+                            <circle cx="20" cy="18" r="2"/>
+                            <path d="M6 7l3 3M15 10l3-3M6 17l3-3M15 14l3 3"/>
+                        </svg>
+                    </div>
+                    <h3>Cloud Mesh</h3>
+                    <p>통합 클라우드 관리 플랫폼</p>
+                    <span class="card-arrow">→</span>
+                </a>
+                <a href="#exodus" class="product-card" data-product="exodus">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"/>
+                            <path d="M4 10h16M4 14h16M10 4v16"/>
+                        </svg>
+                    </div>
+                    <h3>EXODUS</h3>
+                    <p>OpenStack Private Cloud</p>
+                    <span class="card-arrow">→</span>
+                </a>
+                <a href="#acts" class="product-card" data-product="acts">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>ACTs</h3>
+                    <p>Automation CNP Tool</p>
+                    <span class="card-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud X Section -->
+    <section id="cloud-x" class="product-detail cloudx-section">
+        <div class="container">
+            <div class="detail-grid">
+                <div class="detail-content">
+                    <span class="product-tag">VDI Solution</span>
+                    <h2 class="detail-title">Cloud X</h2>
+                    <p class="detail-subtitle">SKB Cloud X VDI 공식 파트너</p>
+                    <p class="detail-desc">
+                        Cloud X는 SKB의 가상 데스크톱 인프라(VDI) 솔루션으로, 
+                        언제 어디서나 안전하고 효율적인 업무 환경을 제공합니다.
+                        Cloud-IN은 공식 총판으로서 구축부터 운영까지 토탈 서비스를 제공합니다.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>개발 및 커스터마이징</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>구축 및 마이그레이션</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>24/7 운영 지원</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>공식 총판 라이선스</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">도입 문의</a>
+                </div>
+                <div class="detail-visual">
+                    <div class="visual-card cloudx-visual">
+                        <div class="vdi-demo">
+                            <div class="vdi-screen">
+                                <div class="vdi-header">
+                                    <span class="vdi-dot"></span>
+                                    <span class="vdi-dot"></span>
+                                    <span class="vdi-dot"></span>
+                                </div>
+                                <div class="vdi-content">
+                                    <div class="vdi-icon">🖥️</div>
+                                    <span>Virtual Desktop</span>
+                                </div>
+                            </div>
+                            <div class="connection-lines">
+                                <svg viewBox="0 0 200 100">
+                                    <path class="line" d="M100,10 Q50,50 100,90"/>
+                                    <path class="line" d="M100,10 Q150,50 100,90"/>
+                                </svg>
+                            </div>
+                            <div class="devices">
+                                <div class="device">💻</div>
+                                <div class="device">📱</div>
+                                <div class="device">🖥️</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud Mesh Section -->
+    <section id="cloud-mesh" class="product-detail mesh-section">
+        <div class="container">
+            <div class="detail-grid reverse">
+                <div class="detail-content">
+                    <span class="product-tag">CMP Solution</span>
+                    <h2 class="detail-title">Cloud Mesh</h2>
+                    <p class="detail-subtitle">CloudMesh with Multi-Cloud</p>
+                    <p class="detail-desc">
+                        다양한 Cloud와 연동 개발하여 Insoft 만의 CMP 표준을 만들어 가고 있습니다.
+                        퍼블릭, 프라이빗, 하이브리드 클라우드를 단일 플랫폼에서 통합 관리하세요.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>IaaS - VMware, Nutanix, OpenStack, PowerVC 통합 관리</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>PaaS - Kubernetes Multi Cluster (EKS, AKS, GKE, Tanzu) 운영</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>Public - AWS, Azure, GCP 하이브리드 클라우드 관리</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>Automation - vRealize, Terraform IaC 자동화</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">데모 신청</a>
+                </div>
+                <div class="detail-visual">
+                    <div class="visual-card mesh-visual">
+                        <!-- Cloud Mesh Logo -->
+                        <div class="mesh-logo-display">
+                            <div class="mesh-logo-icon">
+                                <svg viewBox="0 0 60 60" class="mesh-hexagon">
+                                    <polygon points="30,5 55,17.5 55,42.5 30,55 5,42.5 5,17.5" fill="none" stroke="#2563eb" stroke-width="2"/>
+                                    <polygon points="30,15 45,22.5 45,37.5 30,45 15,37.5 15,22.5" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+                                    <circle cx="30" cy="30" r="6" fill="#2563eb"/>
+                                    <line x1="30" y1="24" x2="30" y2="5" stroke="#3b82f6" stroke-width="1"/>
+                                    <line x1="35" y1="33" x2="55" y2="42.5" stroke="#3b82f6" stroke-width="1"/>
+                                    <line x1="25" y1="33" x2="5" y2="42.5" stroke="#3b82f6" stroke-width="1"/>
+                                </svg>
+                            </div>
+                            <div class="mesh-logo-text">
+                                <span class="mesh-tagline">ADVANCED CLOUD TOTAL MANAGEMENT SOLUTION</span>
+                                <span class="mesh-title">Cloud Mesh</span>
+                            </div>
+                        </div>
+                        <!-- Multi-Cloud Architecture -->
+                        <div class="mesh-multicloud">
+                            <div class="mesh-quadrant">
+                                <div class="quadrant-item iaas">
+                                    <span class="quadrant-title">IaaS</span>
+                                    <span class="quadrant-desc">VMware · Nutanix · OpenStack</span>
+                                </div>
+                                <div class="quadrant-item paas">
+                                    <span class="quadrant-title">PaaS</span>
+                                    <span class="quadrant-desc">K8s · EKS · AKS · GKE</span>
+                                </div>
+                                <div class="quadrant-item public">
+                                    <span class="quadrant-title">Public</span>
+                                    <span class="quadrant-desc">AWS · Azure · GCP</span>
+                                </div>
+                                <div class="quadrant-item automation">
+                                    <span class="quadrant-title">Automation</span>
+                                    <span class="quadrant-desc">Terraform · vRealize</span>
+                                </div>
+                            </div>
+                            <div class="mesh-center-badge">
+                                <span>Cloud</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXODUS Section -->
+    <section id="exodus" class="product-detail exodus-section">
+        <div class="container">
+            <div class="detail-grid">
+                <div class="detail-content">
+                    <span class="product-tag">Private Cloud</span>
+                    <h2 class="detail-title">EXODUS</h2>
+                    <p class="detail-subtitle">OpenStack Private Cloud Platform</p>
+                    <p class="detail-desc">
+                        EXODUS는 OpenStack 기반의 엔터프라이즈 프라이빗 클라우드 플랫폼입니다.
+                        Appliance 형태로도 제공되어 빠르고 간편한 도입이 가능합니다.
+                        검증된 아키텍처로 안정적인 클라우드 인프라를 구축하세요.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>OpenStack 기반 검증된 플랫폼</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>Appliance 형태 제공</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>엔터프라이즈 수준 보안</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>유연한 확장성</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">구축 상담</a>
+                </div>
+                <div class="detail-visual">
+                    <div class="visual-card exodus-visual">
+                        <!-- EXODUS Logo -->
+                        <div class="exodus-logo-display">
+                            <div class="exodus-logo-main">
+                                <div class="exodus-dots">
+                                    <span class="dot dot-1"></span>
+                                    <span class="dot dot-2"></span>
+                                    <span class="dot dot-3"></span>
+                                </div>
+                                <span class="exodus-text">XODUS</span>
+                            </div>
+                            <div class="exodus-tagline">Openstack Private Cloud</div>
+                        </div>
+                        <!-- 2D Architecture Diagram -->
+                        <div class="exodus-architecture">
+                            <div class="exodus-arch-row">
+                                <!-- Controller Side -->
+                                <div class="exodus-arch-col">
+                                    <div class="exodus-sw-stack">
+                                        <div class="exodus-arch-block block-ocmp">
+                                            <span>EXODUS <em>OCMP</em></span>
+                                        </div>
+                                        <div class="exodus-arch-block block-openstack">
+                                            <span>EXODUS <em>Openstack</em></span>
+                                        </div>
+                                    </div>
+                                    <div class="exodus-arch-block block-controller">
+                                        <span>EXODUS <em>Controller</em></span>
+                                        <span class="block-sub">H/W Server</span>
+                                    </div>
+                                </div>
+                                <!-- Compute Side -->
+                                <div class="exodus-arch-col">
+                                    <div class="exodus-vm-grid">
+                                        <div class="exodus-arch-block block-vm">EXODUS <em>vm</em></div>
+                                        <div class="exodus-arch-block block-vm">EXODUS <em>vm</em></div>
+                                        <div class="exodus-arch-block block-vm">EXODUS <em>vm</em></div>
+                                        <div class="exodus-arch-block block-vm vm-more">...</div>
+                                    </div>
+                                    <div class="exodus-arch-block block-compute">
+                                        <span>EXODUS <em>Compute</em></span>
+                                        <span class="block-sub">H/W Server</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTs Section -->
+    <section id="acts" class="product-detail acts-section">
+        <div class="container">
+            <div class="detail-grid reverse">
+                <div class="detail-content">
+                    <span class="product-tag">CNP Solution</span>
+                    <h2 class="detail-title">ACTs</h2>
+                    <p class="detail-subtitle">
+                        <span class="subtitle-red">Automated</span>
+                        <span class="subtitle-gray">CNP Tool</span>
+                        <span class="subtitle-red">EXODUS</span>
+                    </p>
+                    <p class="detail-desc">
+                        ACTs는 EXODUS 플랫폼 위에 구축된 Cloud Native Platform 솔루션입니다.
+                        컨테이너 기반 애플리케이션의 자동화된 배포와 관리를 지원하며,
+                        Kubernetes와 OpenStack을 통합하여 현대적인 클라우드 네이티브 환경을 제공합니다.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>iCNP - Cloud Native Platform 통합</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>Kubernetes 기반 컨테이너 오케스트레이션</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>EXODUS Controller & Compute 아키텍처</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span>VM과 컨테이너 하이브리드 운영</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">자세히 보기</a>
+                </div>
+                <div class="detail-visual">
+                    <div class="visual-card acts-visual">
+                        <!-- ACTs Logo Display -->
+                        <div class="acts-logo-display">
+                            <div class="acts-logo-main">
+                                <div class="acts-dots">
+                                    <span class="dot dot-1"></span>
+                                    <span class="dot dot-2"></span>
+                                    <span class="dot dot-3"></span>
+                                </div>
+                                <span class="acts-text">ACTS</span>
+                            </div>
+                            <div class="acts-tagline">
+                                <span class="tag-red">Automated</span>
+                                <span class="tag-gray">CNP Tool</span>
+                                <span class="tag-red">EXODUS</span>
+                            </div>
+                        </div>
+                        <!-- Architecture Diagram -->
+                        <div class="acts-architecture">
+                            <div class="arch-layer arch-icnp">
+                                <span class="arch-label">iCNP</span>
+                                <span class="arch-sublabel">Cloud Native Platform</span>
+                            </div>
+                            <div class="arch-middle">
+                                <div class="arch-box arch-controller">
+                                    <span>EXODUS Controller</span>
+                                </div>
+                                <div class="arch-stack">
+                                    <div class="arch-item kubernetes">kubernetes</div>
+                                    <div class="arch-item openstack">openstack</div>
+                                </div>
+                            </div>
+                            <div class="arch-layer arch-compute">
+                                <span class="arch-label">EXODUS Compute</span>
+                                <div class="compute-items">
+                                    <span class="compute-item">containers</span>
+                                    <span class="compute-item">vm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Contact Us</span>
+                    <h2 class="section-title">문의하기</h2>
+                    <p class="contact-desc">
+                        클라우드 도입부터 운영까지,<br>
+                        전문가와 상담하세요.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="method-icon">📧</span>
+                            <div>
+                                <span class="method-label">Email</span>
+                                <span class="method-value">contact@cloud-in.co.kr</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <span class="method-icon">📞</span>
+                            <div>
+                                <span class="method-label">Phone</span>
+                                <span class="method-value">02-1234-5678</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <span class="method-icon">📍</span>
+                            <div>
+                                <span class="method-label">Address</span>
+                                <span class="method-value">서울특별시 강남구</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">이름</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">회사명</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">이메일</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="product">관심 제품</label>
+                            <select id="product" name="product">
+                                <option value="">선택하세요</option>
+                                <option value="cloudx">Cloud X</option>
+                                <option value="mesh">Cloud Mesh</option>
+                                <option value="exodus">EXODUS</option>
+                                <option value="acts">ACTs</option>
+                                <option value="all">전체 제품</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">문의 내용</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">문의하기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-cloud">Cloud</span><span class="logo-in">-IN</span>
+                    </a>
+                    <p>기업 클라우드 인프라의 완벽한 파트너</p>
+                </div>
+                <div class="footer-links">
+                    <h4>제품</h4>
+                    <ul>
+                        <li><a href="#cloud-x">Cloud X</a></li>
+                        <li><a href="#cloud-mesh">Cloud Mesh</a></li>
+                        <li><a href="#exodus">EXODUS</a></li>
+                        <li><a href="#acts">ACTs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>회사</h4>
+                    <ul>
+                        <li><a href="#">회사 소개</a></li>
+                        <li><a href="#">파트너</a></li>
+                        <li><a href="#">채용</a></li>
+                        <li><a href="#">블로그</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>지원</h4>
+                    <ul>
+                        <li><a href="#">고객 지원</a></li>
+                        <li><a href="#">기술 문서</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#contact">문의하기</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Cloud-IN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
